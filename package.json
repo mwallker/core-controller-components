@@ -1,0 +1,33 @@
+{
+  "name": "svelte-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "yarn run rollup -c rollup.config.js --watch",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+  },
+  "devDependencies": {
+    "@pyoner/svelte-ts-preprocess": "^1.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.1",
+    "eslint": "^6.6.0",
+    "nodemon": "1.18.4",
+    "rollup": "1.27.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-svelte": "^5.1.1",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "svelte": "^3.14.1",
+    "svelte-preprocess": "^3.2.6",
+    "ts-node": "8.5.2",
+    "typescript": "3.7.2"
+  },
+  "dependencies": {},
+  "keywords": []
+}

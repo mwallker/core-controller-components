@@ -1,0 +1,32 @@
+// https: //basarat.gitbooks.io/typescript/docs/quick/nodejs.html
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "es2017.object",
+      "es2019",
+      "dom",
+    ],
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "rootDir": "./src",
+    "importHelpers": true,
+    "declaration": true,
+    "declarationMap": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "baseUrl": ".",
+    "types": [
+      "svelte"
+    ],
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./src/**/*.test.ts",
+    "./node_modules/*",
+  ]
+}
